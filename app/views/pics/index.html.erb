@@ -1,3 +1,8 @@
 <h2>
-<%= @pics.inspect %>
+<% @pics.each do |pic| %>
+	Lesson: <%= pic.lesson %>
+	Emotion: <%= pic.emotion %>
+	Learned: <%= pic.learned %>
+<% end %>
+
 </h2>
